@@ -8,6 +8,7 @@ const screenshots = [
   { id: 'shot-4', output: 'appstore-4-compress.png' },
   { id: 'shot-5', output: 'appstore-5-watermark.png' },
   { id: 'shot-6', output: 'appstore-6-privacy.png' },
+  { id: 'shot-7', output: 'appstore-7-signature.png' },
 ];
 
 (async () => {
