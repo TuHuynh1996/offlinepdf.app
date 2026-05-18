@@ -14,11 +14,14 @@
   <meta property="og:description" content="Permanently remove sensitive PDF content offline with auto scan and manual review." />
   <meta property="og:url" content="https://offlinepdf.app/deep-redact-pdf/" />
   <meta property="og:image" content="https://offlinepdf.app/assets/screenshots/pic-raw-7.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Deep Redact PDF Offline" />
   <meta name="twitter:description" content="Auto scan and redact PDFs offline. No document upload." />
   <meta name="twitter:image" content="https://offlinepdf.app/assets/screenshots/pic-raw-7.png" />
   <link rel="icon" href="../assets/icon.png" />
+  <link rel="apple-touch-icon" href="../assets/icon.png" />
   <link rel="stylesheet" href="../assets/style.css" />
 
   <script type="application/ld+json">
@@ -28,6 +31,7 @@
       "mainEntity": [
         {"@type":"Question","name":"Does deep redaction upload files?","acceptedAnswer":{"@type":"Answer","text":"No. Redaction runs locally on your device."}},
         {"@type":"Question","name":"What can auto scan detect?","acceptedAnswer":{"@type":"Answer","text":"Email, phone, image areas, and custom keywords."}},
+        {"@type":"Question","name":"Can I review detections before saving?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can inspect and adjust detected areas before applying redaction."}},
         {"@type":"Question","name":"Is redaction permanent?","acceptedAnswer":{"@type":"Answer","text":"Yes. Applied redactions permanently remove content in output PDFs."}}
       ]
     }
@@ -38,7 +42,7 @@
     <div class="site-header__inner">
       <a class="brand" href="/"><img src="../assets/icon.png" alt="Offline PDF Toolkit" /><span class="brand__text"><strong>Offline PDF Toolkit</strong><small>ZERO UPLOAD · 100% LOCAL</small></span></a>
       <nav class="nav-links"><a href="../#tools">PDF Tools</a><a href="../support/">About</a><a href="../privacy/">Privacy</a></nav>
-      <a class="btn btn--win header-cta smart-store-link" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-win-url="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-mac-url="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Get the app</a>
+      <a class="btn btn--win header-cta smart-store-link" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-win-url="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-mac-url="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Get it on your app store</a>
     </div>
   </header>
 
@@ -47,8 +51,8 @@
     <h1 class="hero__title">Deep <span>Redact PDF</span></h1>
     <p class="hero__sub">Permanently remove sensitive PDF content offline. Auto scan by email, phone, image, and keyword, then review before applying.</p>
     <div class="download-group" id="download">
-      <a class="btn btn--win" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" target="_blank" rel="noopener noreferrer">Download for Windows</a>
-      <a class="btn btn--mac" href="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Download for macOS</a>
+      <a class="btn btn--win" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" target="_blank" rel="noopener noreferrer">Get on Microsoft Store</a>
+      <a class="btn btn--mac" href="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Get it on Mac App Store</a>
     </div>
   </section>
 
@@ -62,12 +66,63 @@
   </section>
 
   <section class="section section--tight">
+    <h2 class="section__title">Detection types</h2>
+    <div class="tools-grid">
+      <article class="tool-item"><h4>Email</h4><p>Find common email patterns in document text.</p></article>
+      <article class="tool-item"><h4>Phone</h4><p>Detect phone number patterns for quick redaction.</p></article>
+      <article class="tool-item"><h4>Keyword</h4><p>Scan custom names, account strings, or IDs you provide.</p></article>
+      <article class="tool-item"><h4>Image area</h4><p>Detect likely image blocks for visual masking workflows.</p></article>
+      <article class="tool-item"><h4>Manual boxes</h4><p>Draw your own redaction areas anywhere on the page.</p></article>
+      <article class="tool-item"><h4>Page-by-page review</h4><p>Confirm each match before creating output files.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <h2 class="section__title">Preview</h2>
+    <div class="shots">
+      <a href="../assets/screenshots/pic-raw-7.png"><img src="../assets/screenshots/pic-raw-7.png" alt="Deep Redact tool preview" loading="lazy" /></a>
+    </div>
+  </section>
+
+  <section class="section section--tight">
     <h2 class="section__title">FAQ</h2>
     <div class="faq">
       <details><summary>Does deep redaction upload files?</summary><p>No. Redaction runs locally on your device.</p></details>
       <details><summary>What can auto scan detect?</summary><p>Email, phone, image areas, and custom keywords.</p></details>
+      <details><summary>Can I review detections before saving?</summary><p>Yes. You can inspect and adjust detected areas before applying redaction.</p></details>
       <details><summary>Is redaction permanent?</summary><p>Yes. Applied redactions permanently remove content in output PDFs.</p></details>
     </div>
   </section>
+
+  <section class="section section--tight">
+    <h2 class="section__title">Related tools</h2>
+    <div class="tools-grid">
+      <article class="tool-item"><h4><a href="../offline-pdf-signature/">Offline PDF Signature</a></h4><p>Sign documents after redaction review.</p></article>
+      <article class="tool-item"><h4><a href="../organize-pdf-pages/">Organize PDF Pages</a></h4><p>Reorder and split pages for clean delivery.</p></article>
+      <article class="tool-item"><h4><a href="../batch-pdf-tools/">Batch PDF Tools</a></h4><p>Process large document sets with consistent settings.</p></article>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Offline PDF Toolkit &copy; 2026 Huynh Tu.
+      <a href="../privacy/">Privacy Policy</a>
+      &middot;
+      <a href="../support/">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    (() => {
+      const smartStoreLinks = document.querySelectorAll('.smart-store-link');
+      const ua = navigator.userAgent || '';
+      const platform = navigator.platform || '';
+      const isMac = /Mac|iPhone|iPad|iPod/i.test(platform) || /Mac|iPhone|iPad|iPod/i.test(ua);
+      const selectedStoreUrl = isMac
+        ? 'https://apps.apple.com/app/offline-pdf-toolkit/id6761170707'
+        : 'https://apps.microsoft.com/detail/9N2R3LXXJN6P';
+      smartStoreLinks.forEach((link) => link.setAttribute('href', selectedStoreUrl));
+    })();
+  </script>
 </body>
 </html>

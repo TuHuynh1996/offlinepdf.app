@@ -3,23 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Offline PDF Signature App | Sign PDFs Locally</title>
-  <meta name="description" content="Sign PDF files offline. Draw or import signatures, save to library, and place multiple signatures per page without uploading files." />
+  <title>Offline PDF Signature App | Draw Sign + Digital Certificate Sign</title>
+  <meta name="description" content="Sign PDFs offline with drawn signatures and digital certificate signing (.p12/.pfx). Keep signatures local and apply them without upload." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://offlinepdf.app/offline-pdf-signature/" />
   <link rel="alternate" hreflang="en" href="https://offlinepdf.app/offline-pdf-signature/" />
   <link rel="alternate" hreflang="x-default" href="https://offlinepdf.app/offline-pdf-signature/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Offline PDF Signature App" />
-  <meta property="og:description" content="Sign PDFs locally with saved signatures and precise placement." />
+  <meta property="og:description" content="Sign PDFs locally with saved drawn signatures and digital certificate signing support." />
   <meta property="og:url" content="https://offlinepdf.app/offline-pdf-signature/" />
   <meta property="og:image" content="https://offlinepdf.app/assets/screenshots/pic-raw-5.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Offline PDF Signature App" />
+  <meta name="twitter:description" content="Sign PDFs locally with reusable drawn signatures and digital certificates. No upload." />
+  <meta name="twitter:image" content="https://offlinepdf.app/assets/screenshots/pic-raw-5.png" />
   <link rel="icon" href="../assets/icon.png" />
+  <link rel="apple-touch-icon" href="../assets/icon.png" />
   <link rel="stylesheet" href="../assets/style.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Does signing upload my files?","acceptedAnswer":{"@type":"Answer","text":"No. PDF signing runs locally on your device."}},
+        {"@type":"Question","name":"Can I save multiple signatures?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can save multiple signatures and reuse them."}},
+        {"@type":"Question","name":"Can I place more than one signature on a page?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can place multiple signatures on the same page."}},
+        {"@type":"Question","name":"Can I import signature images?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can import image signatures and place them as stamps."}}
+      ]
+    }
+  </script>
 </head>
 <body>
-  <header class="site-header"><div class="site-header__inner"><a class="brand" href="/"><img src="../assets/icon.png" alt="Offline PDF Toolkit" /><span class="brand__text"><strong>Offline PDF Toolkit</strong><small>ZERO UPLOAD · 100% LOCAL</small></span></a><nav class="nav-links"><a href="../#tools">PDF Tools</a><a href="../support/">About</a><a href="../privacy/">Privacy</a></nav><a class="btn btn--win header-cta smart-store-link" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-win-url="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-mac-url="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Get the app</a></div></header>
-  <section class="hero"><img class="hero__icon" src="../assets/icon.png" alt="Offline PDF Toolkit icon" loading="lazy" /><h1 class="hero__title">Offline PDF <span>Signature</span></h1><p class="hero__sub">Create and place signatures directly on PDFs. Keep a reusable signature library and sign without cloud upload.</p><div class="download-group" id="download"><a class="btn btn--win" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" target="_blank" rel="noopener noreferrer">Download for Windows</a><a class="btn btn--mac" href="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Download for macOS</a></div></section>
-  <section class="section"><h2 class="section__title">Signature features</h2><div class="tools-grid"><article class="tool-item"><h4>Draw or Import</h4><p>Create signature by drawing or image import.</p></article><article class="tool-item"><h4>Saved Library</h4><p>Store multiple signatures and reuse quickly.</p></article><article class="tool-item"><h4>Precise Placement</h4><p>Position and scale signatures on any page.</p></article></div></section>
+  <header class="site-header"><div class="site-header__inner"><a class="brand" href="/"><img src="../assets/icon.png" alt="Offline PDF Toolkit" /><span class="brand__text"><strong>Offline PDF Toolkit</strong><small>ZERO UPLOAD · 100% LOCAL</small></span></a><nav class="nav-links"><a href="../#tools">PDF Tools</a><a href="../support/">About</a><a href="../privacy/">Privacy</a></nav><a class="btn btn--win header-cta smart-store-link" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-win-url="https://apps.microsoft.com/detail/9N2R3LXXJN6P" data-mac-url="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Get it on your app store</a></div></header>
+  <section class="hero"><img class="hero__icon" src="../assets/icon.png" alt="Offline PDF Toolkit icon" loading="lazy" /><h1 class="hero__title">Offline PDF <span>Signature</span></h1><p class="hero__sub">Create drawn signatures and apply digital certificate signing directly on PDFs. Everything stays local.</p><div class="download-group" id="download"><a class="btn btn--win" href="https://apps.microsoft.com/detail/9N2R3LXXJN6P" target="_blank" rel="noopener noreferrer">Get on Microsoft Store</a><a class="btn btn--mac" href="https://apps.apple.com/app/offline-pdf-toolkit/id6761170707" target="_blank" rel="noopener noreferrer">Get it on Mac App Store</a></div></section>
+  <section class="section"><h2 class="section__title">Signature features</h2><div class="tools-grid"><article class="tool-item"><h4>Draw or Import</h4><p>Create signature by drawing or image import.</p></article><article class="tool-item"><h4>Saved Library</h4><p>Store multiple signatures and reuse quickly.</p></article><article class="tool-item"><h4>Precise Placement</h4><p>Position and scale signatures on any page.</p></article><article class="tool-item"><h4>Digital Sign</h4><p>Apply certificate-based signatures with .p12/.pfx files.</p></article></div></section>
+
+  <section class="section section--tight">
+    <h2 class="section__title">Typical workflow</h2>
+    <div class="tools-grid">
+      <article class="tool-item"><h4>1) Create signature</h4><p>Draw with mouse/trackpad or import signature image.</p></article>
+      <article class="tool-item"><h4>2) Save to library</h4><p>Reuse signatures across many documents.</p></article>
+      <article class="tool-item"><h4>3) Place and export</h4><p>Drop on pages, adjust size, and save output PDF.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <h2 class="section__title">Preview</h2>
+    <div class="shots">
+      <a href="../assets/screenshots/pic-raw-5.png"><img src="../assets/screenshots/pic-raw-5.png" alt="Offline PDF signature tool preview" loading="lazy" /></a>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <h2 class="section__title">FAQ</h2>
+    <div class="faq">
+      <details><summary>Does signing upload my files?</summary><p>No. PDF signing runs locally on your device.</p></details>
+      <details><summary>Can I save multiple signatures?</summary><p>Yes. You can save multiple signatures and reuse them.</p></details>
+      <details><summary>Can I place more than one signature on a page?</summary><p>Yes. You can place multiple signatures on the same page.</p></details>
+      <details><summary>Can I import signature images?</summary><p>Yes. You can import image signatures and place them as stamps.</p></details>
+      <details><summary>Does it support digital certificates?</summary><p>Yes. You can apply digital signatures using .p12/.pfx certificate files.</p></details>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <h2 class="section__title">Related tools</h2>
+    <div class="tools-grid">
+      <article class="tool-item"><h4><a href="../deep-redact-pdf/">Deep Redact PDF</a></h4><p>Remove sensitive information before sharing signed files.</p></article>
+      <article class="tool-item"><h4><a href="../organize-pdf-pages/">Organize PDF Pages</a></h4><p>Prepare page order before approval signatures.</p></article>
+      <article class="tool-item"><h4><a href="../batch-pdf-tools/">Batch PDF Tools</a></h4><p>Automate repetitive document workflows.</p></article>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Offline PDF Toolkit &copy; 2026 Huynh Tu.
+      <a href="../privacy/">Privacy Policy</a>
+      &middot;
+      <a href="../support/">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    (() => {
+      const smartStoreLinks = document.querySelectorAll('.smart-store-link');
+      const ua = navigator.userAgent || '';
+      const platform = navigator.platform || '';
+      const isMac = /Mac|iPhone|iPad|iPod/i.test(platform) || /Mac|iPhone|iPad|iPod/i.test(ua);
+      const selectedStoreUrl = isMac
+        ? 'https://apps.apple.com/app/offline-pdf-toolkit/id6761170707'
+        : 'https://apps.microsoft.com/detail/9N2R3LXXJN6P';
+      smartStoreLinks.forEach((link) => link.setAttribute('href', selectedStoreUrl));
+    })();
+  </script>
 </body>
 </html>

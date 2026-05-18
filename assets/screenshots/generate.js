@@ -2,13 +2,14 @@ const puppeteer = require('puppeteer');
 const path = require('path');
 
 const screenshots = [
-  { id: 'shot-1', output: 'appstore-1-convert.png' },
-  { id: 'shot-2', output: 'appstore-2-tools.png' },
-  { id: 'shot-3', output: 'appstore-3-pages.png' },
-  { id: 'shot-4', output: 'appstore-4-compress.png' },
+  { id: 'shot-1', output: 'appstore-1-file-to-pdf.png' },
+  { id: 'shot-2', output: 'appstore-2-pdf-tools.png' },
+  { id: 'shot-3', output: 'appstore-3-organize-pages.png' },
+  { id: 'shot-4', output: 'appstore-4-deep-redact.png' },
   { id: 'shot-5', output: 'appstore-5-watermark.png' },
   { id: 'shot-6', output: 'appstore-6-privacy.png' },
   { id: 'shot-7', output: 'appstore-7-signature.png' },
+  { id: 'shot-8', output: 'appstore-8-automation.png' },
 ];
 
 (async () => {
